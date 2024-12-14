@@ -1,0 +1,218 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.anu {
+    font-size: 1.5em;
+}
+
+.navdiv .p {
+    list-style-type: none;
+    display: flex;
+}
+
+.navdiv .p li {
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.navdiv .p li a {
+    color: white;
+    font-size: 1em;
+}
+
+.navdiv .p li a:hover {
+    color: #007bff;
+}
+
+/* Main Section */
+.mai {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.right {
+    flex: 1;
+    text-align: center;
+}
+
+.imgi {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.left {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.maintxt {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.log {
+    display: flex;
+    margin-top: 20px;
+}
+
+.log .maan {
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+        color: #f4f4f4;
+    }
+
+    .navdiv .p {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navdiv .p li {
+        margin: 10px 0;
+    }
+
+    
+    .mai {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right, .left {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .maintxt {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+
+    .log {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .log .maan img {
+        height: 30px;
+    }
+
+    a{
+    position: relative;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #a0a0a0;
+    font-size: 18px;
+    
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: blue;
+    height: 3px;
+    width: 0;
+    bottom:-10px;
+    left:0;
+    transition: 0.3s;
+}
+
+
+a:hover::after{
+    width: 100%;
+}
+}
+
+
+@media (max-width: 480px) {
+    .maintxt {
+        font-size: 1.2em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+
+    .imgi {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    a{
+    position: relative;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #a0a0a0;
+    font-size: 18px;
+    
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: blue;
+    height: 3px;
+    width: 0;
+    bottom:-10px;
+    left:0;
+    transition: 0.3s;
+}
+
+
+a:hover::after{
+    width: 100%;
+}
+}
+
